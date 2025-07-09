@@ -1,0 +1,5 @@
+{
+  "name": "ICD Code Search",
+  "description": "A sleek, modern user interface to search for International Classification of Diseases (ICD) codes. Results are dynamically generated based on user queries.",
+  "requestFramePermissions": []
+}

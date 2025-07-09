@@ -1,0 +1,61 @@
+2025-07-09 15:23:24,585 - WARNING -  * Debugger is active!
+2025-07-09 15:23:24,589 - INFO -  * Debugger PIN: 129-422-190
+2025-07-09 15:23:31,786 - INFO -  * Detected change in 'D:\\Jarvis\\Jarvis\\projects\\icdcodes\\New folder\\Medicode\\icd_search_app\\app.py', reloading
+2025-07-09 15:23:32,395 - WARNING -  * Debugger is active!
+2025-07-09 15:23:32,399 - INFO -  * Debugger PIN: 129-422-190
+2025-07-09 15:23:49,205 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.190:5000
+2025-07-09 15:23:49,205 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-09 15:23:49,207 - INFO -  * Restarting with stat
+2025-07-09 15:23:49,724 - WARNING -  * Debugger is active!
+2025-07-09 15:23:49,728 - INFO -  * Debugger PIN: 129-422-190
+2025-07-09 15:23:52,265 - INFO - 192.168.0.190 - - [09/Jul/2025 15:23:52] "GET /?q=pain HTTP/1.1" 200 -
+2025-07-09 15:23:52,367 - INFO - 192.168.0.190 - - [09/Jul/2025 15:23:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-07-09 15:23:52,367 - INFO - 192.168.0.190 - - [09/Jul/2025 15:23:52] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-07-09 15:23:53,776 - INFO - 192.168.0.190 - - [09/Jul/2025 15:23:53] "GET /?q=pain HTTP/1.1" 200 -
+2025-07-09 15:23:53,796 - INFO - 192.168.0.190 - - [09/Jul/2025 15:23:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-07-09 15:23:53,798 - INFO - 192.168.0.190 - - [09/Jul/2025 15:23:53] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-07-09 15:23:56,487 - INFO - 192.168.0.190 - - [09/Jul/2025 15:23:56] "GET /?q=pain HTTP/1.1" 200 -
+2025-07-09 15:23:56,510 - INFO - 192.168.0.190 - - [09/Jul/2025 15:23:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-07-09 15:23:56,511 - INFO - 192.168.0.190 - - [09/Jul/2025 15:23:56] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-07-09 15:23:56,998 - INFO - 192.168.0.190 - - [09/Jul/2025 15:23:56] "GET /?q=pain HTTP/1.1" 200 -
+2025-07-09 15:23:57,013 - INFO - 192.168.0.190 - - [09/Jul/2025 15:23:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-07-09 15:23:57,015 - INFO - 192.168.0.190 - - [09/Jul/2025 15:23:57] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-07-09 15:23:57,471 - INFO - 192.168.0.190 - - [09/Jul/2025 15:23:57] "GET /?q=pain HTTP/1.1" 200 -
+2025-07-09 15:23:57,486 - INFO - 192.168.0.190 - - [09/Jul/2025 15:23:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-07-09 15:23:57,488 - INFO - 192.168.0.190 - - [09/Jul/2025 15:23:57] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-07-09 15:23:57,658 - INFO - 192.168.0.190 - - [09/Jul/2025 15:23:57] "GET /?q=pain HTTP/1.1" 200 -
+2025-07-09 15:23:57,674 - INFO - 192.168.0.190 - - [09/Jul/2025 15:23:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-07-09 15:23:57,674 - INFO - 192.168.0.190 - - [09/Jul/2025 15:23:57] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-07-09 15:23:57,832 - INFO - 192.168.0.190 - - [09/Jul/2025 15:23:57] "GET /?q=pain HTTP/1.1" 200 -
+2025-07-09 15:23:57,846 - INFO - 192.168.0.190 - - [09/Jul/2025 15:23:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-07-09 15:23:57,847 - INFO - 192.168.0.190 - - [09/Jul/2025 15:23:57] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-07-09 15:24:00,807 - INFO - 192.168.0.190 - - [09/Jul/2025 15:24:00] "GET /?q=bite HTTP/1.1" 200 -
+2025-07-09 15:24:00,829 - INFO - 192.168.0.190 - - [09/Jul/2025 15:24:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-07-09 15:24:00,830 - INFO - 192.168.0.190 - - [09/Jul/2025 15:24:00] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-07-09 15:24:04,288 - INFO - 192.168.0.190 - - [09/Jul/2025 15:24:04] "GET /?q=frost HTTP/1.1" 200 -
+2025-07-09 15:24:04,311 - INFO - 192.168.0.190 - - [09/Jul/2025 15:24:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-07-09 15:24:04,312 - INFO - 192.168.0.190 - - [09/Jul/2025 15:24:04] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-07-09 15:24:07,737 - INFO - 172.22.0.4 - - [09/Jul/2025 15:24:07] "GET / HTTP/1.1" 200 -
+2025-07-09 15:24:07,754 - INFO - 172.22.0.4 - - [09/Jul/2025 15:24:07] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-07-09 15:24:07,757 - INFO - 172.22.0.4 - - [09/Jul/2025 15:24:07] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-07-09 15:24:08,083 - INFO - 172.22.0.4 - - [09/Jul/2025 15:24:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-09 15:24:12,052 - INFO - 172.22.0.4 - - [09/Jul/2025 15:24:12] "GET /?q=dog HTTP/1.1" 200 -
+2025-07-09 15:24:12,076 - INFO - 172.22.0.4 - - [09/Jul/2025 15:24:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-07-09 15:24:12,078 - INFO - 172.22.0.4 - - [09/Jul/2025 15:24:12] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-07-09 15:24:14,205 - INFO - 172.22.0.4 - - [09/Jul/2025 15:24:14] "GET /?q=bite HTTP/1.1" 200 -
+2025-07-09 15:24:14,230 - INFO - 172.22.0.4 - - [09/Jul/2025 15:24:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-07-09 15:24:14,231 - INFO - 172.22.0.4 - - [09/Jul/2025 15:24:14] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-07-09 15:24:17,205 - INFO - 172.22.0.4 - - [09/Jul/2025 15:24:17] "GET /?q= HTTP/1.1" 200 -
+2025-07-09 15:24:17,225 - INFO - 172.22.0.4 - - [09/Jul/2025 15:24:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-07-09 15:24:17,229 - INFO - 172.22.0.4 - - [09/Jul/2025 15:24:17] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-07-09 15:24:17,391 - INFO - 172.22.0.4 - - [09/Jul/2025 15:24:17] "GET /?q= HTTP/1.1" 200 -
+2025-07-09 15:24:17,407 - INFO - 172.22.0.4 - - [09/Jul/2025 15:24:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-07-09 15:24:17,407 - INFO - 172.22.0.4 - - [09/Jul/2025 15:24:17] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-07-09 15:24:17,587 - INFO - 172.22.0.4 - - [09/Jul/2025 15:24:17] "GET /?q= HTTP/1.1" 200 -
+2025-07-09 15:24:17,603 - INFO - 172.22.0.4 - - [09/Jul/2025 15:24:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-07-09 15:24:17,604 - INFO - 172.22.0.4 - - [09/Jul/2025 15:24:17] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-07-09 15:24:53,115 - INFO -  * Detected change in 'D:\\Jarvis\\Jarvis\\projects\\icdcodes\\New folder\\Medicode\\icd_search_app\\app.py', reloading
+2025-07-09 15:24:53,186 - INFO -  * Restarting with stat

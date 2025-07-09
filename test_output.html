@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICD Search App</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <h1>ICD Code Search</h1>
+    <form action="/search" method="get">
+        <input type="text" name="q" placeholder="Search ICD codes..." value="bite">
+        <button type="submit">Search</button>
+    </form>
+
+    <div class="search-results">
+        
+            <p>No results found for "bite".</p>
+        
+    </div>
+
+    <script src="/static/js/main.js"></script>
+</body>
+</html>

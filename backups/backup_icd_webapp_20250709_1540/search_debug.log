@@ -1,0 +1,65 @@
+Search query received: 'dog bite'
+SQL Query: SELECT icd_code.id AS icd_code_id, icd_code.code AS icd_code_code, icd_code.description AS icd_code_description, icd_code.category AS icd_code_category 
+FROM icd_code 
+WHERE lower(icd_code.code) LIKE lower(?) OR lower(icd_code.description) LIKE lower(?)
+Number of results found: 0
+Search query received: 'bite'
+SQL Query: SELECT icd_code.id AS icd_code_id, icd_code.code AS icd_code_code, icd_code.description AS icd_code_description, icd_code.category AS icd_code_category 
+FROM icd_code 
+WHERE lower(icd_code.code) LIKE lower(?) OR lower(icd_code.description) LIKE lower(?)
+Number of results found: 13
+Search query received: 'animal bit'
+SQL Query: SELECT icd_code.id AS icd_code_id, icd_code.code AS icd_code_code, icd_code.description AS icd_code_description, icd_code.category AS icd_code_category 
+FROM icd_code 
+WHERE lower(icd_code.code) LIKE lower(?) OR lower(icd_code.description) LIKE lower(?)
+Number of results found: 0
+Search query received: 'eanimal bit'
+SQL Query: SELECT icd_code.id AS icd_code_id, icd_code.code AS icd_code_code, icd_code.description AS icd_code_description, icd_code.category AS icd_code_category 
+FROM icd_code 
+WHERE lower(icd_code.code) LIKE lower(?) OR lower(icd_code.description) LIKE lower(?)
+Number of results found: 0
+Search query received: 'animal'
+SQL Query: SELECT icd_code.id AS icd_code_id, icd_code.code AS icd_code_code, icd_code.description AS icd_code_description, icd_code.category AS icd_code_category 
+FROM icd_code 
+WHERE lower(icd_code.code) LIKE lower(?) OR lower(icd_code.description) LIKE lower(?)
+Number of results found: 4
+Search query received: 'surgery'
+SQL Query: SELECT icd_code.id AS icd_code_id, icd_code.code AS icd_code_code, icd_code.description AS icd_code_description, icd_code.category AS icd_code_category 
+FROM icd_code 
+WHERE lower(icd_code.code) LIKE lower(?) OR lower(icd_code.description) LIKE lower(?)
+Number of results found: 9
+Search query received: 'caesari'
+SQL Query: SELECT icd_code.id AS icd_code_id, icd_code.code AS icd_code_code, icd_code.description AS icd_code_description, icd_code.category AS icd_code_category 
+FROM icd_code 
+WHERE lower(icd_code.code) LIKE lower(?) OR lower(icd_code.description) LIKE lower(?)
+Number of results found: 0
+Search query received: 'cesari'
+SQL Query: SELECT icd_code.id AS icd_code_id, icd_code.code AS icd_code_code, icd_code.description AS icd_code_description, icd_code.category AS icd_code_category 
+FROM icd_code 
+WHERE lower(icd_code.code) LIKE lower(?) OR lower(icd_code.description) LIKE lower(?)
+Number of results found: 0
+Search query received: 'ceas'
+SQL Query: SELECT icd_code.id AS icd_code_id, icd_code.code AS icd_code_code, icd_code.description AS icd_code_description, icd_code.category AS icd_code_category 
+FROM icd_code 
+WHERE lower(icd_code.code) LIKE lower(?) OR lower(icd_code.description) LIKE lower(?)
+Number of results found: 0
+Search query received: 'ceasa'
+SQL Query: SELECT icd_code.id AS icd_code_id, icd_code.code AS icd_code_code, icd_code.description AS icd_code_description, icd_code.category AS icd_code_category 
+FROM icd_code 
+WHERE lower(icd_code.code) LIKE lower(?) OR lower(icd_code.description) LIKE lower(?)
+Number of results found: 0
+Search query received: 'newbor'
+SQL Query: SELECT icd_code.id AS icd_code_id, icd_code.code AS icd_code_code, icd_code.description AS icd_code_description, icd_code.category AS icd_code_category 
+FROM icd_code 
+WHERE lower(icd_code.code) LIKE lower(?) OR lower(icd_code.description) LIKE lower(?)
+Number of results found: 116
+Search query received: 'nnewbor'
+SQL Query: SELECT icd_code.id AS icd_code_id, icd_code.code AS icd_code_code, icd_code.description AS icd_code_description, icd_code.category AS icd_code_category 
+FROM icd_code 
+WHERE lower(icd_code.code) LIKE lower(?) OR lower(icd_code.description) LIKE lower(?)
+Number of results found: 0
+Search query received: 'newborn'
+SQL Query: SELECT icd_code.id AS icd_code_id, icd_code.code AS icd_code_code, icd_code.description AS icd_code_description, icd_code.category AS icd_code_category 
+FROM icd_code 
+WHERE lower(icd_code.code) LIKE lower(?) OR lower(icd_code.description) LIKE lower(?)
+Number of results found: 116

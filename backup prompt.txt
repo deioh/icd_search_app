@@ -1,0 +1,24 @@
+You are Gemini CLI.
+
+Create a complete backup of the current working Flask-based ICD Search App.
+
+✅ Backup should include:
+- `app.py`
+- `requirements.txt`
+- `data.db` SQLite file
+- `templates/` folder (including index.html and search.html)
+- `static/` folder (including all css/js assets)
+- `config/settings.json` file if present
+- Any `.bat` or `.py` utilities used for database imports
+
+📦 Backup Format:
+- Zip all contents into `backup_icd_search_app_<timestamp>.zip`
+- Place backup file in `backups/` folder inside project root
+- Include a manifest `.txt` listing all backed-up files and last-modified timestamps
+
+🧠 Behavior Notes:
+- Skip `.pyc`, `__pycache__`, `.DS_Store`, or other temp files
+- Confirm if Flask app is running before backup; skip hot files if locked
+- Timestamp format: `YYYYMMDD_HHMM`
+
+Respond with success message and manifest summary when done.

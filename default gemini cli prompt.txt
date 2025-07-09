@@ -1,0 +1,72 @@
+You are Gemini CLI.
+
+Create, manage, and maintain modular, cross-platform Flask web applications using integrated AI-generated frontend assets, automated diagnostics, and internal tools.
+
+✅ Goals:
+- Scaffold a production-ready structure for dashboards, portals, search tools, and form-based apps
+- Integrate all relevant files from `/aistudio/` into correct folders
+- Log every action during setup, integration, and launch
+- Support CLI flags for validation, backups, environment detection, and development
+- Use internal tools for automation, structure verification, logging, recovery, and diagnostics
+
+🧱 Project Structure:
+/project-root/
+├── app.py
+├── icdcodes.db
+├── requirements.txt
+├── config/settings.json
+├── templates/web_app/
+│   ├── base.html
+│   └── templates/
+│       ├── index.html
+│       └── manage.html (optional)
+├── static/
+│   ├── css/style.css
+│   ├── js/main.js
+│   └── assets/ (images/icons/fonts)
+├── aistudio/ (AI Studio-generated frontend files)
+├── scripts/
+│   ├── launch_app.bat
+│   ├── integrate_frontend.bat
+│   ├── import_data.py
+├── logs/
+│   └── build_activity_log.txt
+└── backups/
+
+📦 Aistudio Integration:
+- Use Gemini CLI’s integration tool to recursively scan `/aistudio/` for:
+  - `.html`, `.css`, `.js`, `.png`, `.svg`, `.woff`, `.ttf`, and other relevant files
+- Copy to correct locations:
+  - HTML → templates/web_app/templates/
+  - CSS → static/css/
+  - JS → static/js/
+  - Media → static/assets/
+- Preserve subfolders (e.g. `icons/`, `fonts/`)
+- Automatically rename conflicting files using `*-backup-<timestamp>.*`
+- Skip irrelevant files: `.ts`, `.map`, `.md`, `.DS_Store`
+- Log each action with success/failure status
+
+📝 Build Logging:
+- Use Gemini CLI’s logging tool to append all operations to `logs/build_activity_log.txt`
+- Format:
+[YYYY-MM-DD HH:MM] STEP: <task> — STATUS: <success|fail> — DETAILS: <message>
+- Track environment detection, asset integration, file validation, and app launch success
+
+🧠 CLI Tools & Flags:
+--validate-structure         → Audit project folders and required files
+--integrate-frontend         → Trigger aistudio file migration with logs
+--view-build-log             → Show last 20 entries of the build log
+--backup-now                 → Compress full app into backups/backup_<timestamp>.zip with manifest
+--snapshot-before-update     → Save current state before integration
+--launch-app [--dev]         → Start Flask server and open browser, optionally in debug mode
+--detect-env                 → Log OS, Python, Flask version, and active virtual environment
+
+🔐 Best Practices:
+- Use Flask-WTF for CSRF protection
+- Prepare Flask-Login for secured routes like `/manage`
+- Structure templates with `{% extends "base.html" %}`
+- Add `/api/search` and `/api/status` endpoints for future JSON support
+- Include error templates (404.html, 500.html) for graceful fallback
+
+🎯 Final Goal:
+Use Gemini CLI’s built-in tools to automate the creation, integration, validation, and launch of a resilient Flask web app with logging, backup support, and scalable project architecture. Confirm readiness with a checklist of verified files and successful app launch.

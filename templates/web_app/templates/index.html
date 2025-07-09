@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- class is set by the script below -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICD Search</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <script>
+      // IIFE to set theme immediately and prevent Flash of Unstyled Content (FOUC)
+      (function() {
+        const theme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.className = theme;
+      })();
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo-title">
+                <!-- Embedded LogoIcon SVG -->
+                <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M11.25 4.533A9.708 9.708 0 003 11.25c0 5.385 4.365 9.75 9.75 9.75s9.75-4.365 9.75-9.75c0-2.39-.853-4.58-2.28-6.312" />
+                    <path fill-rule="evenodd" d="M11.25 3C10.836 3 10.5 3.336 10.5 3.75v6h6A.75.75 0 0017.25 9h-6.75V3.75c0-.414-.336-.75-.75-.75z" clip-rule="evenodd" />
+                    <path d="M14.25 10.5a.75.75 0 00-.75.75v.025c0 1.286.49 2.478 1.343 3.369a.75.75 0 101.09-1.032A3.235 3.235 0 0115 11.25V11.25a.75.75 0 00-.75-.75z" />
+                    <path d="M15.54 15.54a.75.75 0 00-1.06 0l-.884.884a.75.75 0 101.06 1.06l.884-.884a.75.75 0 000-1.06z" />
+                    <path d="M12.983 15.017a.75.75 0 00-1.06 1.06l.884.884a.75.75 0 001.06-1.06l-.884-.884z" />
+                    <path d="M17.06 13.44a.75.75 0 00-1.06 0l-.884.884a.75.75 0 001.06 1.06l.884-.884a.75.75 0 000-1.06z" />
+                </svg>
+                <h1 class="title">ICD Search</h1>
+            </div>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                <!-- Icons are shown/hidden by CSS based on the html tag's class -->
+                <svg id="theme-icon-moon" class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+                </svg>
+                <svg id="theme-icon-sun" class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+            </button>
+        </header>
+
+        <main>
+            <form action="/search" method="get" class="search-form">
+                <div class="search-icon-wrapper">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/>
+                    </svg>
+                </div>
+                <input
+                    type="search"
+                    id="search-input"
+                    name="q"
+                    class="search-input"
+                    placeholder="e.g., 'unspecified asthma' or 'type 2 diabetes'"
+                    value="{{ query or '' }}"
+                    autofocus
+                />
+                <button type="submit" class="search-button">Search</button>
+            </form>
+
+            <div class="results-section">
+                {% if error %}
+                    <div class="empty-state">
+                        <div class="empty-state-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
+                            </svg>
+                        </div>
+                        <h3 class="empty-state-title">An Error Occurred</h3>
+                        <p class="empty-state-message">{{ error }}</p>
+                    </div>
+                {% elif results %}
+                    <div class="results-grid">
+                        {% for result in results %}
+                        <div class="result-card">
+                            <div class="card-content">
+                                <p class="card-category">{{ result.category }}</p>
+                                <h3 class="card-description">{{ result.description }}</h3>
+                            </div>
+                            <div class="card-footer">
+                                <p class="card-code">{{ result.code }}</p>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                {% elif query %}
+                    <div class="empty-state">
+                         <div class="empty-state-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
+                            </svg>
+                        </div>
+                        <h3 class="empty-state-title">No Results Found</h3>
+                        <p class="empty-state-message">Your search for "{{ query }}" did not return any results. Try adjusting your search terms.</p>
+                    </div>
+                {% else %}
+                     <div class="initial-state">
+                        <p>Enter a medical term or condition to begin your search.</p>
+                    </div>
+                {% endif %}
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>Powered by a Flask backend. For informational purposes only.</p>
+        </footer>
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
